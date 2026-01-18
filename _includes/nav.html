@@ -1,0 +1,21 @@
+<nav class="nav">
+    <div class="nav__inner">
+        <a class="logo" href="{{ '/' | relative_url }}">
+            <span class="logo__text">SC</span>
+        </a>
+        <div class="nav__links">
+            <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+            <a class="nav-link{% if page.url contains '/about' %} active{% endif %}"
+                href="{{ '/about.html' | relative_url }}">About</a>
+            <a class="nav-link{% if page.url contains '/experience' %} active{% endif %}"
+                href="{{ '/experience.html' | relative_url }}">Experience</a>
+            <a class="nav-link{% if page.url contains '/projects' %} active{% endif %}"
+                href="{{ '/projects.html' | relative_url }}">Projects</a>
+        </div>
+        <div class="nav__right">
+            <span class="nav__right-text">Connect —</span>
+            <a class="external-link" href="{{ site.data.site.github }}" target="_blank" rel="noopener">GitHub</a>
+            <a class="external-link" href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+</nav>

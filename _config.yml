@@ -1,0 +1,32 @@
+title: "Sumesh Chakkaravarthi"
+baseurl: ""
+url: ""
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+collections:
+  work:
+    output: false
+  projects:
+    output: false
+
+sass:
+  style: compressed
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - vendor
+defaults:
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: default

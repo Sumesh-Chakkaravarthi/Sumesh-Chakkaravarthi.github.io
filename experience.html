@@ -1,0 +1,28 @@
+---
+layout: default
+title: Experience
+permalink: /experience.html
+---
+<section class="page-header">
+    <h1 class="page-header__title">Professional Journey</h1>
+    <p class="page-header__subtitle">Building expertise in data science, machine learning, and analytics through
+        hands-on experience.</p>
+</section>
+
+<section class="section">
+    {% assign sorted_work = site.work | sort: 'order' %}
+    {% for work in sorted_work %}
+    <div class="timeline-item">
+        <h3 class="timeline-item__title">{{ work.title }}</h3>
+        <p class="timeline-item__meta">{{ work.company }} • {{ work.location }} • {{ work.period }}</p>
+        <div class="timeline-item__content">
+            {{ work.content | markdownify }}
+        </div>
+        <div class="tech-stack">
+            {% for tech in work.tech %}
+            <span class="tech-tag">{{ tech }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</section>
