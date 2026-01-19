@@ -189,14 +189,14 @@
             padding: 0 40px;
         }
 
-        /* Hero Section - Compact for Above the Fold */
+        /* Hero Section */
         header {
-            min-height: 70vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 100px 40px 60px;
+            padding: 140px 40px 100px;
             position: relative;
         }
 
@@ -219,61 +219,61 @@
 
         .hero-badge {
             display: inline-block;
-            padding: 8px 24px;
+            padding: 10px 28px;
             background: var(--bg-card);
             backdrop-filter: blur(20px);
             border: 1px solid var(--border);
             border-radius: 30px;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
             color: var(--accent-primary);
-            margin-bottom: 20px;
+            margin-bottom: 32px;
             text-transform: uppercase;
             letter-spacing: 2px;
             animation: fadeInUp 1s ease 0.2s both;
         }
 
         .hero-content h1 {
-            font-size: 64px;
+            font-size: 88px;
             font-weight: 900;
             background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 16px;
-            letter-spacing: -2px;
-            line-height: 1.1;
+            margin-bottom: 28px;
+            letter-spacing: -3px;
+            line-height: 1.05;
             animation: fadeInUp 1s ease 0.3s both;
         }
 
         .hero-tagline {
-            font-size: 20px;
+            font-size: 24px;
             color: var(--text-secondary);
-            margin-bottom: 12px;
+            margin-bottom: 20px;
             font-weight: 400;
             animation: fadeInUp 1s ease 0.4s both;
         }
 
         .hero-location {
             color: var(--text-tertiary);
-            margin-bottom: 24px;
-            font-size: 14px;
+            margin-bottom: 48px;
+            font-size: 16px;
             animation: fadeInUp 1s ease 0.5s both;
         }
 
         .cta-buttons {
             display: flex;
-            gap: 16px;
+            gap: 20px;
             justify-content: center;
             animation: fadeInUp 1s ease 0.6s both;
         }
 
         .btn {
-            padding: 14px 32px;
-            border-radius: 12px;
+            padding: 18px 44px;
+            border-radius: 14px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 16px;
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
@@ -349,14 +349,14 @@
 
         /* Section Styles */
         section {
-            padding: 80px 40px;
+            padding: 120px 40px;
             position: relative;
             z-index: 1;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
         }
 
         .section-tag {
@@ -457,27 +457,18 @@
             font-weight: 600;
         }
 
-        /* Skills Grid - Interactive */
+        /* Skills Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            gap: 32px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .skill-card {
-            cursor: pointer;
-        }
-
-        .skill-card.active {
-            border-color: var(--accent-primary);
-            box-shadow: 0 0 30px rgba(6, 182, 212, 0.3);
-        }
-
         .skill-card h3 {
-            font-size: 18px;
-            margin-bottom: 12px;
+            font-size: 22px;
+            margin-bottom: 20px;
             color: var(--text-primary);
             font-weight: 700;
             position: relative;
@@ -486,10 +477,10 @@
 
         .skill-card p {
             color: var(--text-secondary);
-            line-height: 1.6;
+            line-height: 1.8;
             position: relative;
             z-index: 1;
-            font-size: 13px;
+            font-size: 15px;
         }
 
         /* Experience Timeline */
@@ -602,268 +593,39 @@
             transform: translateY(-2px);
         }
 
-        /* Projects Grid - Enhanced with Tech Pills at Top */
+        /* Projects Grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            gap: 32px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .project-card {
-            padding: 28px;
-        }
-
-        .project-card .tech-stack-top {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-bottom: 16px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .project-card .tech-stack-top .tech-tag {
-            padding: 4px 10px;
-            font-size: 10px;
-            border-radius: 6px;
-        }
-
-        .project-card .project-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-
         .project-card .icon {
-            font-size: 32px;
+            font-size: 48px;
+            margin-bottom: 24px;
             filter: grayscale(30%) brightness(1.2);
             position: relative;
             z-index: 1;
         }
 
         .project-card h3 {
-            font-size: 18px;
-            margin-bottom: 0;
+            font-size: 24px;
+            margin-bottom: 16px;
             color: var(--text-primary);
             font-weight: 700;
             position: relative;
             z-index: 1;
         }
 
-        .project-card .project-hook {
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 1;
-            font-size: 14px;
-        }
-
-        .project-card .project-details {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, opacity 0.3s;
-            opacity: 0;
-            color: var(--text-tertiary);
-            font-size: 13px;
-            line-height: 1.6;
-        }
-
-        .project-card:hover .project-details {
-            max-height: 200px;
-            opacity: 1;
-            margin-bottom: 12px;
-        }
-
-        .project-card .viz-thumbnail {
-            width: 100%;
-            height: 100px;
-            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(20, 184, 166, 0.05));
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            font-size: 11px;
-            color: var(--text-tertiary);
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-        }
-
-        /* AI Chatbot Visual - Chat Bubbles */
-        .viz-chatbot {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            padding: 15px;
-            width: 100%;
-        }
-
-        .viz-chatbot .bubble {
-            padding: 6px 12px;
-            border-radius: 12px;
-            font-size: 10px;
-            max-width: 70%;
-        }
-
-        .viz-chatbot .bubble-user {
-            background: rgba(6, 182, 212, 0.3);
-            align-self: flex-end;
-            border-bottom-right-radius: 4px;
-        }
-
-        .viz-chatbot .bubble-bot {
-            background: rgba(20, 184, 166, 0.2);
-            align-self: flex-start;
-            border-bottom-left-radius: 4px;
-        }
-
-        /* Traffic Analysis Visual - Pie Chart */
-        .viz-disparity {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background: conic-gradient(var(--accent-primary) 0deg 120deg,
-                    var(--accent-secondary) 120deg 200deg,
-                    rgba(6, 182, 212, 0.3) 200deg 280deg,
-                    rgba(20, 184, 166, 0.2) 280deg 360deg);
-            position: relative;
-        }
-
-        .viz-disparity::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 30px;
-            height: 30px;
-            background: var(--bg-primary);
-            border-radius: 50%;
-        }
-
-        /* Time Series Visual - Wave Line */
-        .viz-timeseries {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .viz-timeseries svg {
-            width: 80%;
-            height: 60px;
-        }
-
-        .viz-timeseries path {
-            fill: none;
-            stroke: var(--accent-primary);
-            stroke-width: 2;
-        }
-
-        .viz-timeseries .area {
-            fill: url(#gradient);
-            stroke: none;
-        }
-
-        /* Fraud Detection Visual - Shield */
-        .viz-fraud {
-            position: relative;
-            width: 60px;
-            height: 70px;
-        }
-
-        .viz-fraud .shield {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .viz-fraud .shield::after {
-            content: '✓';
-            font-size: 24px;
-            color: white;
-        }
-
-        /* AR/VR Visual - 3D Cube */
-        .viz-arvr {
-            width: 60px;
-            height: 60px;
-            position: relative;
-            transform-style: preserve-3d;
-            animation: rotateCube 8s infinite linear;
-        }
-
-        @keyframes rotateCube {
-            0% {
-                transform: rotateX(-20deg) rotateY(0deg);
-            }
-
-            100% {
-                transform: rotateX(-20deg) rotateY(360deg);
-            }
-        }
-
-        .viz-arvr .cube-face {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            border: 2px solid var(--accent-primary);
-            background: rgba(6, 182, 212, 0.1);
-        }
-
-        .viz-arvr .front {
-            transform: translateZ(20px);
-        }
-
-        .viz-arvr .back {
-            transform: rotateY(180deg) translateZ(20px);
-        }
-
-        .viz-arvr .left {
-            transform: rotateY(-90deg) translateZ(20px);
-        }
-
-        .viz-arvr .right {
-            transform: rotateY(90deg) translateZ(20px);
-        }
-
-        .viz-arvr .top {
-            transform: rotateX(90deg) translateZ(20px);
-        }
-
-        .viz-arvr .bottom {
-            transform: rotateX(-90deg) translateZ(20px);
-        }
-
         .project-card p {
             color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 16px;
+            line-height: 1.8;
+            margin-bottom: 24px;
             position: relative;
             z-index: 1;
-            font-size: 13px;
-        }
-
-        /* Project highlight when skill selected */
-        .project-card.highlighted {
-            border-color: var(--accent-primary);
-            box-shadow: 0 0 40px rgba(6, 182, 212, 0.25);
-            transform: translateY(-5px);
-        }
-
-        .project-card.dimmed {
-            opacity: 0.4;
+            font-size: 15px;
         }
 
         /* Footer */
@@ -915,22 +677,19 @@
             font-size: 14px;
         }
 
-        /* Responsive Design - Enhanced Mobile */
+        /* Responsive Design */
         @media (max-width: 1024px) {
             .hero-content h1 {
-                font-size: 52px;
+                font-size: 64px;
             }
 
             h2 {
-                font-size: 36px;
+                font-size: 44px;
             }
 
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
+            .about-grid,
             .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
             }
 
             .projects-grid {
@@ -939,57 +698,34 @@
         }
 
         @media (max-width: 768px) {
-            header {
-                min-height: 60vh;
-                padding: 80px 24px 40px;
-            }
-
             nav {
-                width: 95%;
-                padding: 8px 16px;
+                width: 90%;
             }
 
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 4px;
-            }
-
-            nav a {
-                padding: 8px 14px;
-                font-size: 12px;
             }
 
             .hero-content h1 {
-                font-size: 36px;
-                letter-spacing: -1px;
-            }
-
-            .hero-badge {
-                font-size: 10px;
-                padding: 6px 16px;
+                font-size: 44px;
+                letter-spacing: -2px;
             }
 
             h2 {
-                font-size: 28px;
+                font-size: 36px;
             }
 
             .hero-tagline {
-                font-size: 16px;
+                font-size: 20px;
             }
 
             .cta-buttons {
                 flex-direction: column;
-                gap: 12px;
             }
 
             .btn {
                 width: 100%;
-                padding: 12px 24px;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
             }
 
             .projects-grid {
@@ -997,57 +733,24 @@
             }
 
             .container {
-                padding: 0 20px;
+                padding: 0 24px;
             }
 
             section {
-                padding: 60px 20px;
-            }
-
-            .section-header {
-                margin-bottom: 30px;
+                padding: 80px 24px;
             }
 
             .glass-card {
-                padding: 24px;
-            }
-
-            .project-card {
-                padding: 20px;
+                padding: 32px;
             }
 
             .timeline-item {
-                padding: 24px;
-            }
-
-            .about-card h3,
-            .skill-card h3 {
-                font-size: 16px;
-            }
-
-            .about-card p,
-            .skill-card p {
-                font-size: 13px;
+                padding: 32px;
             }
 
             .footer-links {
                 flex-direction: column;
-                gap: 16px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            .section-tag {
-                font-size: 10px;
-                padding: 6px 16px;
+                gap: 20px;
             }
         }
     </style>
@@ -1261,126 +964,71 @@
             </div>
 
             <div class="projects-grid">
-                <div class="glass-card project-card" data-skills="python,postgresql,langchain,rest-apis">
-                    <div class="tech-stack-top">
+                <div class="glass-card project-card">
+                    <div class="icon">🤖</div>
+                    <h3>University Explorer AI Chatbot</h3>
+                    <p>Engineered a secure, scalable data infrastructure by migrating PostgreSQL backend to Red Hat
+                        OpenShift, integrating IPEDS datasets covering 7,000+ institutions.</p>
+                    <div class="tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">OpenShift</span>
+                        <span class="tech-tag">REST APIs</span>
                         <span class="tech-tag">LangChain</span>
                     </div>
-                    <div class="viz-thumbnail">
-                        <div class="viz-chatbot">
-                            <div class="bubble bubble-user">Find universities...</div>
-                            <div class="bubble bubble-bot">7,000+ institutions found</div>
-                        </div>
-                    </div>
-                    <div class="project-header">
-                        <div class="icon">🤖</div>
-                        <h3>University Explorer AI Chatbot</h3>
-                    </div>
-                    <p class="project-hook">Scalable AI chatbot covering 7,000+ institutions with PostgreSQL + OpenShift
-                        backend.</p>
-                    <div class="project-details">Engineered secure data infrastructure by migrating PostgreSQL backend
-                        to Red Hat OpenShift. Integrated IPEDS datasets and built REST APIs for seamless data access.
-                    </div>
                 </div>
 
-                <div class="glass-card project-card" data-skills="r,ggplot2,hypothesis-testing,regression">
-                    <div class="tech-stack-top">
+                <div class="glass-card project-card">
+                    <div class="icon">📊</div>
+                    <h3>Traffic Stop Disparity Analysis</h3>
+                    <p>Investigated racial and age-based disparities in traffic enforcement using advanced statistical
+                        methods including t-tests, correlation analysis, and linear regression.</p>
+                    <div class="tech-stack">
                         <span class="tech-tag">R</span>
                         <span class="tech-tag">ggplot2</span>
+                        <span class="tech-tag">Hypothesis Testing</span>
                         <span class="tech-tag">Regression</span>
                     </div>
-                    <div class="viz-thumbnail">
-                        <div class="viz-disparity"></div>
-                    </div>
-                    <div class="project-header">
-                        <div class="icon">📊</div>
-                        <h3>Traffic Stop Disparity Analysis</h3>
-                    </div>
-                    <p class="project-hook">Uncovered demographic disparities in traffic enforcement using t-tests &
-                        regression.</p>
-                    <div class="project-details">Investigated racial and age-based disparities using Stanford Open
-                        Policing data. Applied hypothesis testing and linear regression to reveal statistically
-                        significant patterns.</div>
                 </div>
 
-                <div class="glass-card project-card" data-skills="python,arima,tableau,pandas,time-series">
-                    <div class="tech-stack-top">
+                <div class="glass-card project-card">
+                    <div class="icon">⏱️</div>
+                    <h3>Time Series Forecasting</h3>
+                    <p>Built and compared ARIMA and exponential smoothing models to predict national prescription demand
+                        using Medicare data. Designed interactive Tableau dashboards.</p>
+                    <div class="tech-stack">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">ARIMA</span>
                         <span class="tech-tag">Tableau</span>
+                        <span class="tech-tag">pandas</span>
                     </div>
-                    <div class="viz-thumbnail">
-                        <div class="viz-timeseries">
-                            <svg viewBox="0 0 100 40">
-                                <defs>
-                                    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="rgba(6,182,212,0.4)" />
-                                        <stop offset="100%" stop-color="rgba(6,182,212,0)" />
-                                    </linearGradient>
-                                </defs>
-                                <path class="area" d="M0,35 Q15,30 25,25 T50,20 T75,15 T100,10 L100,40 L0,40 Z" />
-                                <path d="M0,35 Q15,30 25,25 T50,20 T75,15 T100,10" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-header">
-                        <div class="icon">⏱️</div>
-                        <h3>Time Series Forecasting</h3>
-                    </div>
-                    <p class="project-hook">ARIMA & exponential smoothing models predicting national prescription
-                        demand.</p>
-                    <div class="project-details">Built and compared forecasting models using Medicare data. Created
-                        interactive Tableau dashboards visualizing seasonal trends and demand patterns.</div>
                 </div>
 
-                <div class="glass-card project-card"
-                    data-skills="python,random-forest,scikit-learn,gridsearchcv,machine-learning">
-                    <div class="tech-stack-top">
+                <div class="glass-card project-card">
+                    <div class="icon">💳</div>
+                    <h3>Online Payment Fraud Detection</h3>
+                    <p>Developed a ML-based fraud detection system achieving 92% accuracy. Applied detailed data
+                        preprocessing, feature engineering, and hyperparameter tuning with GridSearchCV.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
                         <span class="tech-tag">Random Forest</span>
                         <span class="tech-tag">Scikit-Learn</span>
                         <span class="tech-tag">GridSearchCV</span>
-                    </div>
-                    <div class="viz-thumbnail">
-                        <div class="viz-fraud">
-                            <div class="shield"></div>
-                        </div>
-                    </div>
-                    <div class="project-header">
-                        <div class="icon">💳</div>
-                        <h3>Payment Fraud Detection</h3>
-                    </div>
-                    <p class="project-hook">ML fraud detection achieving 92% accuracy with hyperparameter-tuned Random
-                        Forest.</p>
-                    <div class="project-details">Applied detailed preprocessing, feature engineering, and GridSearchCV
-                        tuning. Built Tableau dashboards for non-technical stakeholders to visualize fraud triggers.
+                        <span class="tech-tag">Tableau</span>
                     </div>
                 </div>
 
-                <div class="glass-card project-card" data-skills="unity,unreal-engine,python,ar-vr,voice-assistant">
-                    <div class="tech-stack-top">
+                <div class="glass-card project-card">
+                    <div class="icon">🕶️</div>
+                    <h3>Smart Education AR/VR Platform</h3>
+                    <p>Created an immersive AR/VR learning platform for remedial education with a custom Python voice
+                        assistant (JESSIE), boosting student engagement by 30%.</p>
+                    <div class="tech-stack">
                         <span class="tech-tag">Unity</span>
                         <span class="tech-tag">Unreal Engine</span>
+                        <span class="tech-tag">Python</span>
                         <span class="tech-tag">AR/VR</span>
-                    </div>
-                    <div class="viz-thumbnail">
-                        <div class="viz-arvr">
-                            <div class="cube-face front"></div>
-                            <div class="cube-face back"></div>
-                            <div class="cube-face left"></div>
-                            <div class="cube-face right"></div>
-                            <div class="cube-face top"></div>
-                            <div class="cube-face bottom"></div>
-                        </div>
-                    </div>
-                    <div class="project-header">
-                        <div class="icon">🕶️</div>
-                        <h3>Smart Education AR/VR</h3>
-                    </div>
-                    <p class="project-hook">Immersive AR/VR learning platform with voice assistant, boosting engagement
-                        30%.</p>
-                    <div class="project-details">Created for remedial education with custom Python voice assistant
-                        (JESSIE). Integrated data visualization and user interaction tracking for personalized learning.
+                        <span class="tech-tag">Voice Assistant</span>
                     </div>
                 </div>
             </div>
@@ -1465,76 +1113,6 @@
         }
 
         createParticles();
-
-        // Interactive Skills - Project Highlighting
-        const skillMapping = {
-            'machine learning': ['python,random-forest,scikit-learn,gridsearchcv,machine-learning', 'python,postgresql,langchain,rest-apis'],
-            'data science': ['python,arima,tableau,pandas,time-series', 'r,ggplot2,hypothesis-testing,regression'],
-            'time series': ['python,arima,tableau,pandas,time-series'],
-            'visualization': ['python,arima,tableau,pandas,time-series', 'r,ggplot2,hypothesis-testing,regression'],
-            'ar/vr': ['unity,unreal-engine,python,ar-vr,voice-assistant'],
-            'cloud': ['python,postgresql,langchain,rest-apis'],
-            'python': ['python,random-forest,scikit-learn,gridsearchcv,machine-learning', 'python,arima,tableau,pandas,time-series', 'python,postgresql,langchain,rest-apis'],
-            'r': ['r,ggplot2,hypothesis-testing,regression']
-        };
-
-        const skillCards = document.querySelectorAll('#skills .skill-card');
-        const projectCards = document.querySelectorAll('.project-card');
-        let activeSkill = null;
-
-        skillCards.forEach(card => {
-            card.addEventListener('click', function () {
-                const skillText = this.querySelector('h3').textContent.toLowerCase();
-
-                // Remove active from all skill cards
-                skillCards.forEach(c => c.classList.remove('active'));
-
-                // Check if clicking same skill to toggle off
-                if (activeSkill === skillText) {
-                    activeSkill = null;
-                    projectCards.forEach(p => {
-                        p.classList.remove('highlighted', 'dimmed');
-                    });
-                    return;
-                }
-
-                // Set new active skill
-                activeSkill = skillText;
-                this.classList.add('active');
-
-                // Find matching projects
-                let matchedProjects = new Set();
-                Object.keys(skillMapping).forEach(key => {
-                    if (skillText.includes(key)) {
-                        skillMapping[key].forEach(proj => matchedProjects.add(proj));
-                    }
-                });
-
-                // Highlight/dim projects
-                projectCards.forEach(proj => {
-                    const projSkills = proj.getAttribute('data-skills');
-                    if (matchedProjects.has(projSkills) || matchedProjects.size === 0) {
-                        proj.classList.add('highlighted');
-                        proj.classList.remove('dimmed');
-                    } else {
-                        proj.classList.remove('highlighted');
-                        proj.classList.add('dimmed');
-                    }
-                });
-
-                // Scroll to projects
-                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        // Clear highlights when clicking elsewhere
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.skill-card') && !e.target.closest('.project-card')) {
-                skillCards.forEach(c => c.classList.remove('active'));
-                projectCards.forEach(p => p.classList.remove('highlighted', 'dimmed'));
-                activeSkill = null;
-            }
-        });
     </script>
 </body>
 
